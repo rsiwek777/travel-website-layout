@@ -18,6 +18,7 @@ html {
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.6rem;
+	background-color: $body-dark;
 }
 .burger-btn {
 	position: fixed;
@@ -52,7 +53,7 @@ body {
 	&__bars::after,
 	&__bars::before {
 		@include burgerBtn;
-		background-color: #000;
+		background-color: $pure-white;
 	}
 
 	&__bars {
@@ -67,6 +68,81 @@ body {
 			top: 27px;
 			width: 40%;
 			transition-delay: 0.1s;
+		}
+	}
+}
+
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2em;
+	height: 75vh;
+	text-align: center;
+	color: $pure-white;
+	@include heroImages('../img/header-img.jpg');
+	background-attachment: scroll;
+
+	&__heading {
+		font-family: $font-family-logo;
+		font-size: 4.8rem;
+		font-weight: 300;
+	}
+
+	&___text {
+		font-size: 1.4rem;
+	}
+
+	&__btn {
+		margin-top: 2em;
+		padding: 0.8em 1.6em;
+		font-size: 1.4rem;
+		border: none;
+		border-radius: 8px;
+		color: $dark;
+		text-decoration: none;
+		text-transform: uppercase;
+		background-color: $pure-white;
+		cursor: pointer;
+
+		&::before {
+			background-color: $light-white;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.section-block {
+		height: 50px;
+		width: 45%;
+	}
+
+	.header {
+		&__heading {
+			font-size: 6.6rem;
+		}
+		&__text {
+			font-size: 2.2rem;
+		}
+		&__btn {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.burger-btn {
+		top: 50px;
+		right: 50px;
+	}
+
+	.header {
+		background-image: $yellow-gradient, url(../img/header-img-hq.jpg);
+	
+		&__heading {
+			font-size: 8rem;
 		}
 	}
 }

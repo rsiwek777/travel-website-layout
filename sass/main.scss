@@ -72,6 +72,51 @@ body {
 	}
 }
 
+.nav {
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-image: $yellow-gradient-solid;
+	transition: transform 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+	z-index: 100;
+	transform: translateX(100%);
+
+	&--active {
+		transform: translateX(0);
+	}
+
+	&__item {
+		position: relative;
+		display: block;
+		color: $pure-white;
+		margin: 0.5em 0;
+		padding: 0.5em 2em;
+		font-size: 2.8rem;
+		text-decoration: none;
+		font-weight: 300;
+
+		&::before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 3px;
+			height: 100%;
+			transform: scaleY(0);
+			transition: transform 0.5s;
+			background-color: $pure-white;
+		}
+
+		&:hover::before {
+			transform: scaleY(1);
+		}
+	}
+}
+
 .header {
 	position: relative;
 	display: flex;
@@ -140,7 +185,7 @@ body {
 
 	.header {
 		background-image: $yellow-gradient, url(../img/header-img-hq.jpg);
-	
+
 		&__heading {
 			font-size: 8rem;
 		}

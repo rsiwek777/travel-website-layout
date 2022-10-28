@@ -158,7 +158,6 @@ body {
 		}
 	}
 }
-
 .dreams {
 	&__box {
 		display: flex;
@@ -173,10 +172,31 @@ body {
 
 	&__title {
 		margin-bottom: 0.5em;
+		font-family: $font-family-logo;
+		font-weight: 300;
+		color: $secondary-color;
 	}
 
 	&__text {
 		font-size: 1.4rem;
+	}
+}
+.hero-img {
+	position: relative;
+	padding: 10em 2em;
+	text-align: center;
+	overflow: hidden;
+
+	@include heroImages('../img/hero-img.jpg');
+
+	&__title {
+		font-family: $font-family-logo;
+		font-size: 4.8rem;
+		margin-bottom: 0.5em;
+	}
+
+	&__text {
+		padding: 1em 0;
 	}
 }
 
@@ -233,6 +253,19 @@ body {
 			font-size: 1.8rem;
 		}
 	}
+
+	.hero-img {
+		padding: 30rem 2em;
+
+		hr {
+			margin: 0 auto;
+			width: 70%;
+		}
+
+		&__text {
+			font-size: 2.2rem;
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -248,7 +281,7 @@ body {
 	}
 
 	.header {
-		background-image: $yellow-gradient, url(../img/header-img-hq.jpg);
+		background-image: $yellow-gradient, url('../img/header-img-hq.jpg');
 
 		&__heading {
 			font-size: 8rem;
@@ -272,6 +305,20 @@ body {
 		}
 		&__text {
 			font-size: 2.2rem;
+		}
+	}
+
+	.hero-img {
+		padding: 40rem 2em;
+		background-image: $yellow-gradient, url('../img/hero-img-hq.jpg');
+
+		&__title {
+			font-size: 7.2rem;
+		}
+
+		hr {
+			width: 60%;
+			max-width: 900px;
 		}
 	}
 }

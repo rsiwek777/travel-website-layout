@@ -4,6 +4,13 @@ const navItems = document.querySelectorAll('.nav__item')
 
 navBtn.addEventListener('click', () => {
 	nav.classList.toggle('nav--active')
+
+	let delayTime = 0
+
+	navItems.forEach(item => {
+		item.classList.toggle('nav-items-animation')
+		item.style.animationDelay = `0.${delayTime++}s`
+	})
 })
 
 navItems.forEach(e =>

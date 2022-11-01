@@ -96,12 +96,6 @@ body {
   color: #fff;
 }
 
-.black-bars-color,
-.black-bars-color::after,
-.black-bars-color::before {
-  background-color: #2e2e2e;
-}
-
 .burger-btn {
   position: fixed;
   top: 20px;
@@ -111,6 +105,7 @@ body {
   border: 1px solid transparent;
   cursor: pointer;
   z-index: 1000;
+  mix-blend-mode: difference;
 }
 .burger-btn:hover .burger-btn__bars::after,
 .burger-btn:hover .burger-btn__bars::before {

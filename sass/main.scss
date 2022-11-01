@@ -414,6 +414,60 @@ body {
 	}
 }
 
+.contact {
+	position: relative;
+	color: $dark;
+	background-color: $light-white;
+	overflow: hidden;
+
+	.section-block-left {
+		background-color: $body-dark;
+	}
+
+	&__form, &__form-top {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__form-label {
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+	}
+
+	&__form-input {
+		@include contactForm;
+
+		&::placeholder {
+			font-size: 1.4rem;
+		}
+	}
+
+	&__form-textarea {
+		@include contactForm;
+		width: 100%;
+		min-width: 150px;
+		max-width: 100%;
+		min-height: 150px;
+		max-height: 1000px;
+	}
+
+	&__form-btn {
+		align-self: flex-end;
+		padding: 1em;
+		width: 100%;
+		max-width: 300px;
+		cursor: pointer;
+		color: $pure-white;
+		border: none;
+		border-radius: 8px;
+		background-color: $main-color;
+
+		&::before {
+			background-color: $secondary-color;
+		}
+	}
+}
+
 @media (min-width: 576px) {
 	.dreams {
 		&__box {

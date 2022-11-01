@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Open+Sans:wght@300;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/main.css">
     <title>TravelWorld</title>
 </head>
@@ -41,7 +42,7 @@
     </header>
 
     <main class="main">
-        <section class="dreams section-padding section white-section">
+        <section class="dreams section-padding section dark-section">
             <div class="wrapper">
                 <h2 class="section-heading">Spełniaj marzenia</h2>
 
@@ -79,7 +80,7 @@
             <hr>
         </section>
 
-        <section class="islands section-padding section white-section" id="islands">
+        <section class="islands section-padding section dark-section" id="islands">
             <div class="wrapper">
                 <h2 class="section-heading">Polecane Wyspy</h2>
 
@@ -146,14 +147,13 @@
         </section>
 
         <section class="offers section-padding section" id="offers">
-            
+
             <div class="section-block section-block-right"></div>
             <div class="section-block section-block-left"></div>
-            
-            <h2 class="section-heading">Oferty</h2>
-            
-            <div class="wrapper">
 
+            <h2 class="section-heading">Oferty</h2>
+
+            <div class="wrapper">
                 <div class="offers__box">
                     <div class="offers__option">
                         <img src="./img/offers-img1.jpg" alt="Wyjazd z dziećmi" class="offers__option-img">
@@ -166,7 +166,8 @@
                         </div>
                     </div>
                     <div class="offers__option">
-                        <img src="./img/offers-img2.jpg" alt="Wypad ze znajomymi" class="offers__option-img offers__option-img--right">
+                        <img src="./img/offers-img2.jpg" alt="Wypad ze znajomymi"
+                            class="offers__option-img offers__option-img--right">
                         <div class="offers__option-info">
                             <h3 class="offers__option-heading">Wypad ze znajomymi</h3>
                             <p class="offers__option-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -191,8 +192,60 @@
 
         </section>
 
+        <section class="reviews section-padding section dark-section" id="reviews">
+            <h2 class="section-heading">Opinie</h2>
+            <div class="wrapper">
+
+                <div class="reviews__boxes">
+
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/reviews-img1.jpg" alt="Anna Nowak">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Expedita quasi ullam optio dolore. Quos quas tempore, reprehenderit dolores architecto
+                                minus.</p>
+                            <strong>Anna Nowak</strong>
+                        </div>
+                    </div>
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/reviews-img2.jpg" alt="Tomasz Kowalski">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Expedita quasi ullam optio dolore. Quos quas tempore, reprehenderit dolores architecto
+                                minus.</p>
+                            <strong>Tomasz Kowalski</strong>
+                        </div>
+                    </div>
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/reviews-img3.jpg" alt="Wiktoria Wiśniewska">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Expedita quasi ullam optio dolore. Quos quas tempore, reprehenderit dolores architecto
+                                minus.</p>
+                            <strong>Wiktoria Wiśniewska</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slick.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
